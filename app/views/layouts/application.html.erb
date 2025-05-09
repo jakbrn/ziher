@@ -2,20 +2,20 @@
 <html>
 <head>
   <title>ZiHeR / <%= ENV["ZIHER_APP_NAME"] %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+  <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container" style="width: 1400px;">
-
-<%= render "layouts/menu" %>
-
-<%= render "layouts/messages" %>
-
-<%= yield %>
-
-<%= render "layouts/footer" %>
+<div class="min-h-screen bg-gray-50 flex flex-col">
+  <%= render "layouts/menu" %>
+  <div class="container mx-auto px-4 py-6 flex-1">
+    <%= render "layouts/messages" %>
+    <%= yield %>
+  </div>
+  <%= render "layouts/footer" %>
 </div>
 </body>
 </html>

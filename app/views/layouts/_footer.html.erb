@@ -1,13 +1,14 @@
-<div class="well well-small" style="margin-top: 60px">
-  <div class="row">
-    <div class="col-md-4 text-left">
-      <b><%= link_to root_url do %>ZiHeR / <%= ENV["ZIHER_APP_NAME"] %><% end %></b> - wersja <a href="https://github.com/ziher/ziher/commits/<%= ApplicationController::ZIHER_COMMIT %>"><%= ApplicationController::ZIHER_VERSION %></a>
+<footer class="border-t bg-white py-4">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="flex items-center gap-2">
+      <span class="text-emerald-600 font-semibold"><%= link_to root_url do %>ZiHeR / <%= ENV["ZIHER_APP_NAME"] %><% end %></span>
+      <a href="https://github.com/ziher/ziher/commits/<%= ApplicationController::ZIHER_COMMIT %>" class="text-sm text-gray-500">- wersja <%= ApplicationController::ZIHER_VERSION %></a>
     </div>
-    <div class="col-md-4 text-center">
-      <a href="http://www.zhr.pl">Związek Harcerstwa Rzeczypospolitej</a>
-    </div>
-    <div class="col-md-4 text-right">
-      Kontakt: <b><a href="mailto:ziher@zhr.pl">ziher@zhr.pl</a></b>
+
+    <div class="text-sm text-gray-500"><a href="http://www.zhr.pl">Związek Harcerstwa Rzeczypospolitej</a></div>
+
+    <div class="text-sm">
+      Kontakt: <a href="mailto:ziher@zhr.pl" class="text-emerald-600 hover:underline">ziher@zhr.pl</a>
     </div>
   </div>
-</div>
+</footer>
