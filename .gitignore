@@ -22,3 +22,6 @@ postgres*dump
 *.swp
 ubuntu-bionic-18.04-cloudimg-console.log
 passenger.*
+
+/app/assets/builds/*
+!/app/assets/builds/.keep

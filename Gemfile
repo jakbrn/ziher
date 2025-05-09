@@ -61,3 +61,5 @@ gem 'audited'
 gem 'pagy'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
+
+gem "tailwindcss-rails", "~> 2.0"
